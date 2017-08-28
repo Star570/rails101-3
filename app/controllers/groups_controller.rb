@@ -22,7 +22,7 @@ class GroupsController < ApplicationController
 	end
 
 	def show
-		@posts = @group.posts
+		@posts = @group.posts.recent
 	end
 
 	def edit	
