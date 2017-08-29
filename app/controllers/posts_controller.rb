@@ -23,7 +23,7 @@ class PostsController < ApplicationController
 
 	def update
 		if @post.update(post_params)
-			redirect_to group_path(@group), notice: "Update Seccess"
+			redirect_to account_posts_path, notice: "Update Seccess"
 		else
 			render :edit
 		end
@@ -31,7 +31,7 @@ class PostsController < ApplicationController
 
 	def destroy
 		@post.destroy
-		redirect_to group_path(@group), alert: "Post deleted"
+		redirect_to account_posts_path, alert: "Post deleted"
 	end
 
 

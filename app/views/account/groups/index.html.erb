@@ -1,0 +1,17 @@
+<div class="col-md-12">
+	<h2 class="text-center">My Groups</h2>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Title</th>
+				<th>Description</th>
+				<th>Post Count</th>
+				<th>Last Update</th>
+			</tr>
+		</thead>
+		<tbody>
+			<%= render :partial => "join_group", :collection => @groups, :as => :group %>
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,16 @@
+<div class="col-md-12">
+	<h2 class="text-center">My Posts</h2>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Content</th>
+				<th>Group Name</th>
+				<th>Last Update</th>
+				<th colspan="2"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<%= render :partial => "join_post", :collection => @posts, :as => :post %>			
+		</tbody>
+	</table>
+</div>
